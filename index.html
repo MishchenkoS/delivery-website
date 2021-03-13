@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delivery</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="general.css" rel="stylesheet" type="text/css">
+    <link href="modal/modal.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#" class="header__logo__link">MyDelivery</a>
+            </div>
+            <div class="header__block-right">
+                <div class="header__login">
+                    <a class="header__login__link" id='admin' href="admin.html">Admin</a>
+                    <a class="header__login__link" id='seller' href="seller.html">Seller</a>
+                    <a class="header__login__link header__login-button" id="logInBtn">Log in</a>
+                    <a class="header__login__link header__logout" id="logOut">Log out</a>
+                </div>
+                <div class="header__cart">
+                    <a class="header__cart__link" href="cart-page/cart-page.html">
+                        <span class="span span-price">0 UAH</span>
+                        <span class="span span-quantity">0</span>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <div class="products__container">
+        <ul class="product-switcher"></ul> 
+        <div class="product-shop__container"></div>
+        <h2 class="products__title">All products</h2>
+        <div class="products"></div>
+    </div>
+</div>
+<div class="blur"></div>
+<div class="modal">
+    <h2 class="modal__title modal__title-logIn">Registration/Log in</h2>
+    <span class="modal__button-close">
+        <img src="assets/img/close.svg" alt="close-img">
+    </span>
+    <form class="modal__form">
+        <label class="modal__label">
+            <span class="modal__span modal__span-username">Username</span>
+            <input class="modal__input modal__input-username" id="login" type="text" placeholder="Username">
+        </label>
+        <label class="modal__label">
+            <span class="modal__span modal__span-password">Password</span>
+            <input class="modal__input modal__input-password" id="password" type="password" placeholder="Password">
+        </label>
+        <div class="modal__block-reg-info"></div>
+        <div class="modal__buttons">
+            <a class="modal__button modal__button-registration" id="checkIn">registration</a>
+            <a class="modal__button modal__button-signIn" id="signIn">sign in</a>
+        </div>
+    </form>
+</div>
+
+<script src="modal/modal.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="config/config.js" type="text/javascript"></script>
+<script src="class/users.js" type="text/javascript"></script>
+<script src="class/data.js" type="text/javascript"></script>
+
+</body>
+</html>

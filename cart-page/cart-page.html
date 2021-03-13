@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery</title>
+  <link href="../general.css" rel="stylesheet" type="text/css">
+  <link href="cart-page.css" rel="stylesheet" type="text/css">
+  <link href="../modal-order/modal-order.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__logo__link" href="../index.html">MyDelivery</a>
+        </div>
+        <div class="header__cart">
+          <a class="header__cart__link">
+            <span class="span span-price">0 $</span>
+            <span class="span span-quantity">0</span> 
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class='cart'>
+        <div class="cart__container">
+            <h2 class="cart__title">Корзина пустая</h2>
+            <p class="cart__text">Вероятней всего, вы еще не сделали заказ.</p>
+            <p class="cart__text">Для того, чтобы сделать заказ, перейдите на главную страницу.</p>
+            <img class="cart__image" src="../assets/img/shopping-cart.png" alt='shopping-image'/>
+            <a class="cart__link" href="../index.html">Вернуться назад</a>
+        </div>
+        <div class="cart-full__container">
+            <div class="cart__container-top">
+                <h2 class="cart__title cart__title-second">Корзина</h2>
+                <button class="cart__button-clear">Очистить корзину</button>
+            </div> 
+            <div class="cart__container-middle">
+            </div>
+            <div class="cart__container-bottom">
+                <div class="cart__container-bottom-buttons">
+                    <a class="cart__button-back" href="../index.html">Вернуться назад</a>
+                    <button class="cart__button-pay">Оплатить сейчас</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="blur"></div>
+  <div class="modal-order">
+      <h2 class="modal-order__title">Order</h2>
+      <span class="modal__button-close">
+        <img src="../assets/img/close.svg" alt="close-img">
+      </span>
+      <form class="modal-order__form">
+          <div class="modal-order__block">
+              <span class="modal-order__span">Name</span>
+              <input class="modal-order__input" id="user_name" type="text" placeholder="Enter your name" maxlength="50" minlength="2">
+          </div>
+          <div class="modal-order__block">
+              <span class="modal-order__span">Address</span>
+              <input class="modal-order__input" id="address_name" type="text" placeholder="Enter your address">
+          </div>
+          <div class="modal-order__block-payment">
+              <span class="modal-order__span">Payment</span>
+              <div class="modal-order__block-orders">
+                  <input class="modal-order__radio modal-order__radio-cash" id="cash" type="radio">
+                  <label for="cash">Cash</label>
+              </div>
+              <div class="modal-order__block-orders">
+                  <input class="modal-order__radio modal-order__radio-card" id="card" type="radio">
+                  <label for="card">Card</label>
+              </div>
+              <input class="modal-order__input modal-order__input-card" type="text"
+                     placeholder="Enter your card number" id="card_name" minlength="17" maxlength="16">
+          </div>
+          <a class="modal-order__button" href="#" id="ordered">to order</a>
+      </form>
+  </div>
+
+  <script src="../modal-order/modal-order.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="../config/config.js" type="text/javascript"></script>
+  <script src="../class/order.js"></script>
+  <script src="../class/basket.js"></script>
+</body>
+</html>

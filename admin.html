@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delivery</title>
+    <link href="general.css" rel="stylesheet" type="text/css">
+    <link href="admin-page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="admin__block">
+    <h1 class="admin__title">Admin</h1>
+    <a class="admin__button-back" href="index.html">Back</a>
+  </div>
+  <div class="admin__form-container">
+    <form class="admin__form">
+      <input class="admin__input" id="collectionCreate" placeholder="collection">
+      <input class="admin__input" id="shopCreate" placeholder="shop">
+      <input class="admin__input" id="nameFoodCreate" placeholder="name food">
+      <input class="admin__input" id="priceCreate" placeholder="price">
+      <input class="admin__input" id="imgCreate" placeholder="img">
+      <a class="admin__button" id="buttonCreate">Create new</a>
+    </form>
+    <form class="admin__form">
+      <input class="admin__input" id="collectionUpdate" placeholder="collection">
+      <input class="admin__input" id="shopUpdate" placeholder="shop">
+      <input class="admin__input" id="nameFoodUpdate" placeholder="name food">
+      <input class="admin__input" id="priceUpdate" placeholder="price">
+      <input class="admin__input" id="imgUpdate" placeholder="img">
+      <a class="admin__button" id="buttonUpdate">Update</a>
+    </form>
+    <form class="admin__form">
+      <input class="admin__input" id="collectionDeleteAll" placeholder="collection">
+      <input class="admin__input" id="shopDeleteAll" placeholder="shop">
+      <a class="admin__button" id="buttonRemoveShop">Remove shop from collection</a>
+    </form>
+    <form class="admin__form">
+      <input class="admin__input" id="collectionDelete" placeholder="collection">
+      <input class="admin__input" id="shopDelete" placeholder="shop">
+      <input class="admin__input" id="nameFoodDelete" placeholder="name food">
+      <a class="admin__button" id="buttonRemoveFood">Remove food from shop</a>
+    </form>
+    <form class="admin__form">
+      <input class="admin__input" id="login" placeholder="login">
+      <input class="admin__input" id="role" placeholder="role">
+      <a class="admin__button" id="buttonUpdateRole">Update role</a>
+    </form>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="config/config.js" type="text/javascript"></script>
+<script src="class/admin.js" type="text/javascript"></script>
+</body>

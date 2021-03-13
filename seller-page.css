@@ -1,0 +1,41 @@
+* {
+    font-family: ProximaNova-Regular;
+}
+
+.seller__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-order__container, .received-order__container {
+    font-family: ProximaNova-Bold;
+    font-size: 20px;
+}
+
+.open-order__block, .received-order__block {
+    box-shadow: 0 17px 38px -7px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.seller__title {
+    font-family: ProximaNova-Bold;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.food-info {
+    margin: 10px 0;
+}
+
+.food-info__item {
+    font-size: 18px;
+}
+
+@media (max-width: 576px) {
+    .seller__button {
+        margin: 0 auto;
+    }
+}
