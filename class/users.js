@@ -51,7 +51,7 @@ class Users {
       defaultFirestore.runTransaction(async (transaction) => {
         const sfDoc = await transaction.get(sfDocRef);
         if(sfDoc.exists) {
-          this.showMessage('Придумайте новый логин');
+          this.showMessage('Придумайте новий логін');
           return;
         }
         sfDocRef.set({
@@ -59,10 +59,10 @@ class Users {
           role: 'user'
         });
         this.clearInput();
-        this.showMessage('Вы зарегестрированы');
+        this.showMessage('Ви зареєстровані');
       })
     } catch(error) {
-      this.showMessage('Что-то с сервером:');
+      this.showMessage('Щось із сервером:');
     }
   }
   
