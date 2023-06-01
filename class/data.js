@@ -153,7 +153,7 @@ class Data {
       const arr = JSON.stringify(this.arrayBasket);
       localStorage.setItem('basket', arr);
     } else {
-      console.error('Сорри, вы не вошли в систему, а потому не имеете права добавлять данные в корзину')
+      console.error('Вибачте, ви не увійшли в систему, а тому не маєте права додавати товари у корзину')
     }
   }
 
